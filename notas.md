@@ -93,3 +93,31 @@ Ahí se creará el archivo styles.css en la carpeta "public" y en el archivo HTM
 <link rel="stylesheet" href="./styles.css">
 donde ya nos debería visualizar los estilos en el navegador.
 
+CLASE 1.5.
+INICIANDO EL PROYECTO CON VITE.
+
+Vite es un manejador de ASSETS, un compilador.
+
+En la página de Tailwind CSS, en la pestaña "Framework Guides" podemos ver una lista de Frameworks y nos enseña como hacer la instalación según cada uno, pero en nuestro caso, no usaremos ninguno debido a que sólo utilizaremos archivos HTML plano, y la instalación será personalizada.
+
+Comenzamos escribiendo en la terminal:
+npm init -y
+donde se creará el archivo package.json con la configuración por defecto, ahí dentro le borramos la línea del script "test" y agregamos:
+    "dev": "vite"
+
+En la terminal escribimos:
+npm install -D tailwindcss postcss autoprefixer vite
+aquí se instalarán las independencias como DEV
+
+npx tailwindcss init -p
+con este comando crearemos los archivos postcss.config.js y tailwind.config.js
+
+Creamos la ruta css/tailwind.css
+ahí agregamos las siguientes líneas:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+En el archivo HTML agregamos:
+    <link rel="stylesheet" href="./css/tailwind.css">
+Aquí VITE se encargará de hacer el compilado necesario.
