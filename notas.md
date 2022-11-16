@@ -118,6 +118,21 @@ ahí agregamos las siguientes líneas:
 @tailwind components;
 @tailwind utilities;
 
+En el archivo tailwind.config.js específicamos de donde queremos que compile los estilos:
+  content: [
+    './*.html'
+
 En el archivo HTML agregamos:
     <link rel="stylesheet" href="./css/tailwind.css">
 Aquí VITE se encargará de hacer el compilado necesario.
+
+Desde ahora podemos notar que al momento de ejecutar "npm run dev" se creará un servidor y veremos en tiempo real los cambios realizados por en el archivo html.
+
+CLASE 1.6.
+INTEGRACIÓN CON VISUAL STUDIO CODE.
+
+Para ayudarnos al momento de maquetar con TailwindCSS, existe una extensión en VSC que permite detectar las utilities styles y así en caso de olvidarnos de alguna clase simplemente escribimos un poco del código y nos irá dando sugerencias de estilos.
+
+El plugin se llama: Tailwind CSS IntelliSense.
+
+CLASE 2.1.
