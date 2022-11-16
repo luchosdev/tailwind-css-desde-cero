@@ -136,3 +136,6 @@ Para ayudarnos al momento de maquetar con TailwindCSS, existe una extensión en 
 El plugin se llama: Tailwind CSS IntelliSense.
 
 CLASE 2.1.
+FLUJO DE TRABAJO BÁSICO CON UTILITIES CLASSES.
+
+Aquí vemos cómo trabajar tanto con CSS tradicional como con TailwindCSS, y vemos que en caso de que no sepamos cómo se llama alguna de las clases en Tailwind, iremos directamente a su página web y escribimos en el buscador el nombre del estilo en CSS y nos mostrará una lista de cómo se escribe en Tailwind.
