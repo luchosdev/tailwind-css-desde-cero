@@ -139,3 +139,41 @@ CLASE 2.1.
 FLUJO DE TRABAJO BÁSICO CON UTILITIES CLASSES.
 
 Aquí vemos cómo trabajar tanto con CSS tradicional como con TailwindCSS, y vemos que en caso de que no sepamos cómo se llama alguna de las clases en Tailwind, iremos directamente a su página web y escribimos en el buscador el nombre del estilo en CSS y nos mostrará una lista de cómo se escribe en Tailwind.
+
+CLASE 2.2.
+AÑADIR ESTILOS BÁSICOS GLOBALES A TODO EL PROYECTO.
+
+Un ejemplo de un estilo global sería:
+    body {
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 50px;
+    }
+
+Pero estos estilos no deben estar en el archivo HTML, ya que sino tocaría agregarlo en cada archivo, entonces, para que se mantenga en cada archivo podemos agregarlo en tailwind.css ya que ahí se encargará de agregarlo en todos los demás archivos HTML.
+
+Ahora, si deseamos seguir usando el estilo tipo Tailwind, podemos agregar en ese mismo archivo: "@apply", y seguido escribimos las clases tal cual se haría en el documento html, por ejemplo:
+@apply bg-gray-500 pt-10
+
+Ahora, Tailwind no acepta por defecto porcentajes en sus estilos, pero podemos "extender" las capacidades de Tailwind, para eso, vamos a la documentación de Tailwind, y buscamos en este caso Padding, y buscamos la sección "Customizing your theme", donde encontraremos que es el archivo tailwind.config.js configuramos de la siguiente manera:
+module.exports = {
+  theme: {
+    extend: {
+      spacing: {
+        '5px': '5px',
+      }
+    }
+  }
+}
+donde el primer '5px' puede ser el nombre que queramos identificar y el segundo '5px' será el valor agregado, por ejemplo:
+module.exports = {
+  theme: {
+    extend: {
+      spacing: {
+        'quarter': '25%',
+      }
+    }
+  }
+}
+ahora, podemos llamar esta nueva propiedad como en el siguiente ejemplo: pl-quarter pr-quarter, donde sería lo mismo que colocar: padding-left: 25%; y, padding-right: 25%;
+Y si queremos saber a qué otras propiedades se le puede aplicar, simplemente escribimos "quarter" y nos saldrá el listado de las propiedades de espaciados con las que se puede utilizar.
