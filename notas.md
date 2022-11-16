@@ -58,3 +58,38 @@ Puede ser tedioso estar escribiendo el comando cada rato, pero se puede solucion
 --watch
 quedando todo el comando
 npx tailwindcss -i ./src/tailwind.css -o ./dist/styles.css --watch
+
+CLASE 1.4.
+INSTALACIÓN COMO PLUGIN POSTCSS.
+
+En este caso, usamos un proyecto nuevo, con el mismo contenido de HTML sin los scripts de Tailwind anteriores.
+
+En la página de Tailwind CSS vamos a la pestaña "Using PostCSS", y seguimos las instrucciones de instalación tal cual como el de Tailwind CLI.
+
+Algunas adiciones es crear el archivo postcss.config.js donde insertaremos el código
+module.exports = {
+    plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+    }
+}
+
+Luego, creamos una carpeta, en este caso llamada CSS, dentro un archivo llamado main.css, y escribimos:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Antes de continuar, debemos instalar PostCss ya que este proyecto lo estamos construyendo desde cero, entonces escribimos en la terminal:
+npm install postcss-cli
+En caso de usar herramientas como Next.js o Laravel generalmente ya viene instalado este paquete.
+
+Agregamos en el archivo package.json el siguiente código:
+  "scripts": {
+    "dev": "postcss css/main.css -o public/styles.css"
+Para que así compile los estilos correctamente al escribir el comando:
+npm run dev
+
+Ahí se creará el archivo styles.css en la carpeta "public" y en el archivo HTML agregamos el la siguiente etiqueta:
+<link rel="stylesheet" href="./styles.css">
+donde ya nos debería visualizar los estilos en el navegador.
+
