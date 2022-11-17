@@ -234,3 +234,21 @@ colors: {
   'do-blue-medium': 'rgb(20, 86, 255)',
   'do-blue-light': 'rgb(0, 105, 255)',
 }
+
+CLASE 3.1.
+BARRA DE NAVEGACION I.
+
+Empezammos a maquetar la estructura dando tamaño, color y espaciados correspondientes.
+
+CLASE 3.2.
+BARRA DE NAVEGACION II.
+
+Igual que el anterior.
+
+CLASE 3.3.
+HOVER, FOCUS Y ACTIVE EN LOS ELEMENTOS.
+
+CLASE 3.4.
+CUERPO DEL SITIO.
+
+
