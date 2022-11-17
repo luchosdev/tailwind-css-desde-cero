@@ -2,6 +2,7 @@
 @font-face {
     font-family: "CascadiaCode";
     src: url('./fonts/CascadiaCode.ttf');
+}
 
 @tailwind base;
 @tailwind components;
