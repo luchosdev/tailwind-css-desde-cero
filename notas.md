@@ -201,4 +201,36 @@ En el caso que no trabajemos con una herramienta externa como React, podemos con
 CLASE 2.4.
 EXTRAER ELEMENTOS COMUNES A COMPONENTES II.
 
-En el caso que usemos un framework como React, Laravel o Vue.
+En el caso que usemos un framework como React, Laravel o Vue, se tiene otra forma.
+Para el ejemplo usaremos VUE, desde su documentación oficial en la V2, buscamos su script del CDN
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+Lo insertamos en el HEAD y antes del terminar el body agregamos otro script y adentro escribimos
+(ver index.html)
+
+Ahora, para mejorar aún la escructura y no repetir código, creamos un archivo Js aparte donde insertaremos el Vue.component y el New Vue., luego llamamos ese archivo en un script al final del body.
+
+Para finalizar, vamos al archivo tailwind.config.js y agregamos en "content":
+'./js/*.js'
+para que así, al momento de modificar algo en los archivos Js de esa carpeta Tailwind los pueda escuchar y compilar.
+
+CLASE 2.5.
+PERSONALIZANDO FUENTES Y COLORES.
+
+Ya aquí empezamos a trabajar con el proyecto que es hacer un clone de la web DigitalOcean.
+Comenzamos con inspeccionar los elementos buscando las fuentes en cada tamaño de párrafo de la página y al saber cuáles son los buscamos en GoogleFonts. Una de ellas hay que descargarla desde un repositorio de GitHub, y el archivo principail "ttf" lo copiamos en una nueva carpeta llamada "fonts"; luego, en el archivo tailwind.css lo importamos con:
+@font-face {
+  font-family: "CascadiaCode";
+  src: url('./fonts/CascadiaCode.ttf');
+
+Y en el archivo tailwind.config.js escribimos en "extends":
+  fontFamily: {
+        'sans': "'Work Sans', sans-serif", //aquí estamos reemplazando la fuente por defecto de Tailwind.
+        'cascadia': '"CascadiaCode"',
+      },
+
+Ahora seguiremos con los colores, buscando cada color que encontremos, por ejemplo el del encabezado, el cual es #080c2d; vamos nuevamente al archivo tailwind.config.js y extendemos:
+colors: {
+  'do-blue-dark': '#080c2d',
+  'do-blue-medium': 'rgb(20, 86, 255)',
+  'do-blue-light': 'rgb(0, 105, 255)',
+}
