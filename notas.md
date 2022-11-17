@@ -2,7 +2,7 @@ CLASE 1.1
 QUE ES TAILWIND CSS.
 
 Es un Framework de CSS.
-Está basado en clases de utilidad, y no es componentes.
+Está basado en clases de utilidad, y no en componentes.
 
 Ventajas: 
     Personalización fácil y rápida.
@@ -107,7 +107,7 @@ donde se creará el archivo package.json con la configuración por defecto, ahí
 
 En la terminal escribimos:
 npm install -D tailwindcss postcss autoprefixer vite
-aquí se instalarán las independencias como DEV
+aquí se instalarán las dependencias como DEV
 
 npx tailwindcss init -p
 con este comando crearemos los archivos postcss.config.js y tailwind.config.js
@@ -177,3 +177,28 @@ module.exports = {
 }
 ahora, podemos llamar esta nueva propiedad como en el siguiente ejemplo: pl-quarter pr-quarter, donde sería lo mismo que colocar: padding-left: 25%; y, padding-right: 25%;
 Y si queremos saber a qué otras propiedades se le puede aplicar, simplemente escribimos "quarter" y nos saldrá el listado de las propiedades de espaciados con las que se puede utilizar.
+
+CLASE 2.3.
+EXTRAER ELEMENTOS COMUNES A COMPONENTES I.
+
+Cuando tenemos elementos pequeños que se repiten, por ejemplo un botón, es normal que se repita el mismo estilo para todos, en ese caso, podemos ir al archivo tailwind.css y crear una clase donde agrupe los estilos, por ejemplo:
+.btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded
+}
+Así, solo colocamos la clase btn-primary en cada botón y no escribiremos el mismo código una y otra vez.
+
+Ahora, también debemos indicarle a Tailwind en qué capa queremos que se compile, en este caso en "components", de la siguiente forma:
+@layer components{
+    .btn-primary {
+        @apply bg-blue-600 text-white px-4 py-2 rounded
+    }
+}
+Esto es para tener un orden y evitar que tal vez en un futuro sobreescribamos accidentalmente el estilo de otro layer.
+Esto sirve cuando son elementos pequeños como el botón, pero en el caso de todo el panel, hay dos opciones, ya sea si trabajamos con un framework como React o no.
+
+En el caso que no trabajemos con una herramienta externa como React, podemos continuar creando clases como el del botón.
+
+CLASE 2.4.
+EXTRAER ELEMENTOS COMUNES A COMPONENTES II.
+
+En el caso que usemos un framework como React, Laravel o Vue.
