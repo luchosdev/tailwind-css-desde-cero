@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Ocean - The Developer Cloud</title>
+    <link rel="icon" type="image" href="https://www.digitalocean.com/_next/static/media/do-logo.d3eb8550.svg"/>
+    <title>DigitalOcean | The Developer Cloud</title>
     <link rel="stylesheet" href="./css/tailwind.css">
 </head>
 <body>
@@ -57,24 +58,45 @@
             </div>
             <div>
                 <a href="" class="border border-gray-400 px-5 py-3 rounded-lg font-medium focus:outline-dotted focus:outline-1 focus:bg-sky-100">Log In</a>
-                <a href="" class="px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 text-white font-bold ">Sign Up</a>
+                <a href="" class="px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 text-white font-bold">Sign Up</a>
             </div>
         </div>
     </div>
 
     <div>
-        <div class="container">
-            <div>
-                <h1>
+        <div class="flex container mx-auto border border-blue-700">
+            <div class="w-1/2 border border-orange-500">
+                <h1 class="text-6xl font-bold tracking-tighter">
                     The cloud is complex.
                     We make it simple.
                 </h1>
-                <p>
-                    The cloud computing services you need, with the predictable pri
+                <p class="mt-5 text-xl font-medium text-gray-500">
+                    The cloud computing services you need, with the predictable pricing, developer-friendly features, and scalability you'll love.
                 </p>
             </div>
-            <div>
-
+            <div class="w-1/2 border border-red-600">
+                <div class="mb-4 font-medium w-4/5">
+                    Welcome to DigitalOcean. Sign up to get started!
+                </div>
+                <form action="">
+                    <div class="flex flex-col gap-y-5">
+                        <input class="px-5 py-4 rounderlg border border-gray-400" type="text" placeholder="Firts name">
+                        <input class="px-5 py-4 rounderlg border border-gray-400" type="email">
+                        <input class="px-5 py-4 rounderlg border border-gray-400" type="password">
+                        <div class="flex justify-between gap-x-4">
+                            <button class="w-3/4 px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 text-white font-bold">Deploy in seconds</button>
+                            <button class="px-3 py-3 bg-gray-200 rounded-lg">
+                                <img src="https://doimages.nyc3.digitaloceanspaces.com/google-logo.svg" alt="Google">
+                            </button>
+                            <button class="px-3 py-3 bg-gray-200 rounded-lg">
+                                <img src="https://doimages.nyc3.digitaloceanspaces.com/github-logo.svg" alt="GitHub">
+                            </button>
+                        </div>
+                        <div class="text-gray-500">
+                            By signing up you agree to the <a class="underline font-light">Terms of Service</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
