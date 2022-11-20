@@ -11,10 +11,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: rgb(0, 105, 255);
+.shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    animation: animate-shine 15s ease-out infinite;
 }
 
+@keyframes animate-shine {
+    0% {opacity: .3; width: 0;}
+    50% {opacity: .3;}
+    100% {opacity: .3; width: 100%;}
+}
 
 /* body {
     @apply bg-gray-500 pt-10 pl-quarter pr-quarter;

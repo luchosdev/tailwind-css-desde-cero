@@ -10,18 +10,18 @@
 </head>
 <body>
     <header class="sticky top-0 z-10">
-        <div class="bg-do-blue-dark2 text-gray-300 py-1 text-sm">
+        <div class="bg-do-blue-dark2 text-gray-300 py-2 text-sm font-semibold">
             <div class="container mx-auto flex justify-between">
-                <div class="flex items-center">
+                <a class="flex items-center cursor-pointer">
                     <div>
                         Our Sydney data center is here! Learn about our new, state-of-the-art data center in Australia
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                     </svg>
-                </div>
+                </a>
                 <div class="flex gap-x-4 items-center">
-                    <a href="" class="bg-do-blue-mediumdark px-3 py-1 rounded text-sky-400 font-semibold">We're Hiring</a>
+                    <a href="" class="hover:text-white">We're Hiring</a>
                     <a href="" class="hover:text-white">Blog</a>
                     <a href="" class="hover:text-white">Docs</a>
                     <a href="" class="hover:text-white">Get Support</a>
@@ -36,20 +36,20 @@
                     <a href="">
                         <img src="https://www.digitalocean.com/_next/static/media/logo.87a8f3b8.svg" alt="DigitalOceanPicture">
                     </a>
-                    <div class="flex items-center mr-">
+                    <div class="flex items-center cursor-pointer">
                         <a href="" class="mr-2">Products</a>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                     </div>
-                    <div class="flex items-center mr-">
+                    <div class="flex items-center cursor-pointer">
                         <a href="" class="mr-2">Solutions</a>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                     </div>
                     <a href="">Marketplace</a>
-                    <div class="flex items-center mr-">
+                    <div class="flex items-center cursor-pointer">
                         <a href="" class="mr-2">Community</a>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -58,14 +58,15 @@
                     <a href="">Pricing</a>
                 </div>
                 <div>
-                    <a href="" class="border border-gray-400 px-5 py-3 rounded-lg font-medium focus:outline-dotted focus:outline-1 focus:bg-sky-100">Log In</a>
+                    <a href="" class="hover:bg-gray-200 px-5 py-3 rounded-lg font-medium focus:outline-dotted focus:outline-1 focus:bg-sky-100">Log In</a>
                     <a href="" class="px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 text-white font-bold">Sign Up</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div
+    <!-- Hero -->
+    <section
         class="pt-14 top-0.5 w-full h-screen bg-cover"
         style="background-image: url('./images/background-digitalOcean.png');"
         >
@@ -124,43 +125,48 @@
                 </form>
             </div>
         </div> -->
-    </div>
+    </section>
 
-    <div class="container flex mx-auto pt-24 px-16 justify-center gap-x-10 rounded-t-5xl bg-do-white">
-        <div class="container ">
-            <div class="text-do-blue-light font-bold text-5xl font-epilogue">15</div>
-            <div class="text-do-gray-medium font-medium text-xl w-7/8">Globally distributed data centers</div>
-        </div>
-        <div class="container ">
-            <div class="text-do-blue-light font-bold text-5xl font-epilogue">185</div>
-            <div class="text-do-gray-medium font-medium text-xl w-7/8">Countries our customers build in</div>
-        </div>
-        <div class="container ">
-            <div class="text-do-blue-light font-bold text-5xl font-epilogue">> 600k</div>
-            <div class="text-do-gray-medium font-medium text-xl w-7/8">Customers building with DigitalOcean</div>
-        </div>
-        <div class="container ">
-            <div class="text-do-blue-light font-bold text-5xl font-epilogue">99.99%</div>
-            <div class="text-do-gray-medium font-medium text-xl w-7/8">Uptime SLA for Droplets and Storage</div>
-        </div>
-    </div>
-
-    <div class="container flex flex-col py-24 bg-do-white">
-        <div class="flex justify-center font-bold tracking-tighter text-do-blue-dark3 text-4.5xl">Do more with less complexity</div>
-        <div class="flex justify-center pt-4 pb-12 px-72 font-medium text-base text-center text-do-gray-medium">Our simple UI, CLI, API, and docs enable you to spend time on your business while we focus on the infrastructure.</div>
-        <div class="flex justify-center items-center font-jetbrains text-do-blue-light">
-            <div>
-                Explore our products
+    <!-- Stadistic Data -->
+    <section class="bg-do-blue-light">
+        <div class="container flex mx-auto pt-24 px-16 justify-center gap-x-10 rounded-t-5xl bg-do-white">
+            <div class="container ">
+                <div class="text-do-blue-light font-bold text-5xl font-epilogue">15</div>
+                <div class="text-do-gray-medium font-medium text-xl w-7/8">Globally distributed data centers</div>
             </div>
-            <a href=""><!-- queda pendiente la transicion de la flecha, ver los videos... -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                </svg>
-            </a>
+            <div class="container ">
+                <div class="text-do-blue-light font-bold text-5xl font-epilogue">185</div>
+                <div class="text-do-gray-medium font-medium text-xl w-7/8">Countries our customers build in</div>
+            </div>
+            <div class="container ">
+                <div class="text-do-blue-light font-bold text-5xl font-epilogue">> 600k</div>
+                <div class="text-do-gray-medium font-medium text-xl w-7/8">Customers building with DigitalOcean</div>
+            </div>
+            <div class="container ">
+                <div class="text-do-blue-light font-bold text-5xl font-epilogue">99.99%</div>
+                <div class="text-do-gray-medium font-medium text-xl w-7/8">Uptime SLA for Droplets and Storage</div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div>
+    <!-- Explore our products -->
+    <section class="container flex flex-col justify-center py-24 bg-do-white">
+        <div class="flex justify-center font-bold tracking-tighter text-do-blue-dark3 text-4.5xl">
+            Do more with less complexity
+        </div>
+        <div class="flex pt-4 pb-12 px-72 font-medium text-base text-center text-do-gray-medium">
+            Our simple UI, CLI, API, and docs enable you to spend time on your business while we focus on the infrastructure.
+        </div>
+        <a class="group flex justify-center items-center font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
+            Explore our products
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+        </a>
+    </section>
+
+    <!-- Carrusel -->
+    <section>
         <img class="bg-do-white" src="./images/wave.svg" alt="">
         <div class="bg-do-white3 text-do-gray-medium text-center font-bold font-epilogue text-4.5xl pt-14">
             Our Customers
@@ -169,46 +175,6 @@
             <!-- Franja 1 -->
             <div class="flex gap-5">
 
-                    <div class="-ml-32 shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/1.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/2.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/3.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/4.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/5.png"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/6.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/7.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/8.png"></img>
-                        </div>
-                    </div>
                     <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
                         <div class="m-auto">
                             <img src="./images/1.svg"></img>
@@ -234,7 +200,7 @@
                             <img src="./images/5.png"></img>
                         </div>
                     </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
+                    <!-- <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
                         <div class="m-auto">
                             <img src="./images/6.svg"></img>
                         </div>
@@ -248,7 +214,7 @@
                         <div class="m-auto">
                             <img src="./images/8.png"></img>
                         </div>
-                    </div>
+                    </div> -->
 
             </div>
 
@@ -280,7 +246,7 @@
                             <img src="./images/13.png"></img>
                         </div>
                     </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
+                    <!-- <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
                         <div class="m-auto">
                             <img src="./images/14.svg"></img>
                         </div>
@@ -289,48 +255,139 @@
                         <div class="m-auto">
                             <img src="./images/15.svg"></img>
                         </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/9.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/10.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/11.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/12.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/13.png"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/14.svg"></img>
-                        </div>
-                    </div>
-                    <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
-                        <div class="m-auto">
-                            <img src="./images/15.svg"></img>
-                        </div>
-                    </div>
+                    </div> -->
 
             </div>
 
         </div>
         <img class="bg-do-white rotate-180" src="./images/wave.svg" alt="">
-    </div>
+    </section>
+
+    <!-- Cost of products -->
+    <section class="container flex justify-between bg-do-white pt-12 pb-16">
+        <div class="flex flex-col justify-center">
+            <div class=" text-do-blue-dark3 text-4.5xl font-bold font-epilogues">
+                See what you can save
+            </div>
+            <div class="py-3">
+                Monthly caps and flat pricing mean your bill is never a surprise.
+            </div>
+            <a class="group flex pr-1 pt-5 items-center cursor-pointer font-jetbrains font-semibold text-do-blue-light hover:text-do-blue-medium">
+                Calculate your savings
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="rounded-3xl border shadow-lg shadow-gray-200">
+            <div class="flex flex-col justify-center bg-do-blue-light2 rounded-t-3xl p-8 h-56">
+                <div class="text-do-white2 text-3xl font-bold font-epilogue">
+                    Basic virtual machine costs
+                </div>
+                <div class="text-base font-normal text-do-white4 mt-2 leading-6 tracking-tighter">
+                    Easy, fast, and flexible compute built for a range of needs.
+                </div>
+                <div class="flex justify-between px-3 pt-10 ">
+                    <div class="rounded-md p-2 w-20 text-center text-white bg-do-blue-medium3 relative shine">
+                        1 CPU
+                    </div>
+                    <div class="rounded-md p-2 w-20 text-center">
+                        2 CPUs
+                    </div>
+                    <div class="rounded-md p-2 w-20 text-center">
+                        4 CPUs
+                    </div>
+                    <div class="rounded-md p-2 w-20 text-center">
+                        8 CPUs
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-do-white2 py-8 px-10 rounded-3xl">
+                <div class="flex justify-between text-do-gray-medium bg-do-white5 p-4 rounded-xl">
+                    1 GiB Memory / 25 GiB Storage / 1000 GiB Bandwidth
+                </div>
+                <div class="flex justify-between py-3 border-b decoration-dashed border-do-gray-medium2">
+                    <div class="flex items-center">
+                        <img class="mr-4 w-10" src="https://www.digitalocean.com/_next/static/media/do-logo.d3eb8550.svg" alt="">
+                        <p class="text-do-blue-dark2 leading-4">DigitalOcean</p>
+                    </div>
+                    <div>
+                        <div class="text-do-blue-light text-3xl font-jetbrains font-bold text-right">
+                            $6,00
+                        </div>
+                        <p class="text-do-gray-medium font-jetbrains text-sm">Includes bandwidth</p>
+                    </div>
+                </div>
+                <div class="flex justify-between py-3 border-b decoration-dashed border-do-gray-medium2">
+                    <div class="flex items-center">
+                        <img class="mr-4 w-10" src="https://www.digitalocean.com/_next/static/media/gcp-logo.e05c1f98.svg" alt="">
+                        <p class="text-do-blue-dark2 leading-4">GCP</p>
+                    </div>
+                    <div>
+                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold text-right">
+                            $6,88
+                        </div>
+                        <p class="text-do-gray-medium font-jetbrains text-sm">With bandwidth: $91,88</p>
+                    </div>
+                </div>
+                <div class="flex justify-between py-3 border-b decoration-dashed border-do-gray-medium2">
+                    <div class="flex items-center">
+                        <img class="mr-4 w-10" src="https://www.digitalocean.com/_next/static/media/aws-logo.72288ec5.svg" alt="">
+                        <p class="text-do-blue-dark2 leading-4">AWS</p>
+                    </div>
+                    <div>
+                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold text-right">
+                            $8,47
+                        </div>
+                        <p class="text-do-gray-medium font-jetbrains text-sm">With bandwidth: $98,47</p>
+                    </div>
+                </div>
+                <div class="flex justify-between py-3 border-b decoration-dashed border-do-gray-medium2">
+                    <div class="flex items-center">
+                        <img class="mr-4 w-10" src="https://www.digitalocean.com/_next/static/media/azure-logo.9b198435.svg" alt="">
+                        <p class="text-do-blue-dark2 leading-4">Azure</p>
+                    </div>
+                    <div>
+                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold text-right">
+                            $7,59
+                        </div>
+                        <p class="text-do-gray-medium font-jetbrains text-sm">With bandwidth: $79,59</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- View the docs -->
+    <section class="py-16">
+        <div class="flex justify-center">
+            <div class="flex justify-between items-start max-h-60 mx-24 bg-do-blue-medium2 rounded-3xl border">
+                <!-- Left -->
+                <div class="flex flex-col z-20 max-w-xl my-8 mr-10 ml-16">
+                    <h3 class="text-white font-epilogue mb-8 text-3xl font-bold">
+                        A cloud for your entire journey
+                    </h3>
+                    <p class="text-white mb-6 ">
+                        Build robust applications using a comprehensive portfolio of compute, storage, database, and networking products.
+                    </p>
+                    <a class="group flex items-center font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light">
+                        View the docs
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="stroke-2 w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- Right -->
+                <div class="z-10 mt-14">
+                    <img data-src="https://www.digitalocean.com/_next/static/media/cloudJourneyImage.954519ea.svg" src="https://www.digitalocean.com/_next/static/media/cloudJourneyImage.954519ea.svg" alt="cloud journey" class="LazyImage___StyledImg-sc-1pcy1c0-0 kdUydf logo lazyload blur-up">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <div class="pt-60"></div>
 
