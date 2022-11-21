@@ -31,6 +31,7 @@ module.exports = {
         'do-blue-light2': 'rgb(18, 83, 250)',
         'do-gray-medium': 'rgb(77, 91, 124)',
         'do-gray-medium2': 'rgb(169, 179, 202)',
+        'do-gray-medium3': 'rgb(138 150 181)',
         'do-white': 'rgb(249, 250, 254)',
         'do-white2': 'rgb(255, 255, 255)',
         'do-white3': 'rgb(222 236 255)',
