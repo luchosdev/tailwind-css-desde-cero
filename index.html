@@ -519,11 +519,11 @@
     </section>
 
                                     <!-- Explore our products -->
-    <section class="container flex flex-col justify-center py-24 bg-do-white text-center">
+    <section class="container flex flex-col justify-center py-24 bg-do-white text-center leading-none">
         <div class="flex justify-center font-bold tracking-tighter text-do-blue-dark3 text-4.5xl">
             Do more with less complexity
         </div>
-        <div class="flex pt-4 pb-12 lg:px-72 text-base text-do-gray-medium">
+        <div class="flex pt-6 pb-12 lg:px-72 text-base text-do-gray-medium">
             Our simple UI, CLI, API, and docs enable you to spend time on your business while we focus on the infrastructure.
         </div>
         <a class="group flex justify-center items-center font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
@@ -633,15 +633,15 @@
     </section>
 
                                     <!-- Cost of products -->
-    <section class="container flex justify-between bg-do-white pt-12 pb-16">
-        <div class="flex flex-col justify-center">
+    <section class="container flex flex-col lg:flex-row justify-between bg-do-white pt-12 pb-16">
+        <div class="flex flex-col justify-center text-center lg:text-left leading-none pb-14">
             <div class=" text-do-blue-dark3 text-4.5xl font-bold font-epilogues">
                 See what you can save
             </div>
             <div class="py-3">
                 Monthly caps and flat pricing mean your bill is never a surprise.
             </div>
-            <a class="group flex pr-1 pt-5 items-center cursor-pointer font-jetbrains font-semibold text-do-blue-light hover:text-do-blue-medium">
+            <a class="group flex pr-1 pt-5  items-center mx-auto lg:mx-0 cursor-pointer font-jetbrains font-semibold text-do-blue-light hover:text-do-blue-medium">
                 Calculate your savings
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:ml-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
@@ -650,31 +650,31 @@
         </div>
 
         <div class="rounded-3xl border shadow-lg shadow-gray-200">
-            <div class="flex flex-col justify-center bg-do-blue-light2 rounded-t-3xl p-8 h-56">
-                <div class="text-do-white2 text-3xl font-bold font-epilogue">
+            <div class="flex flex-col justify-center bg-do-blue-light2 rounded-t-3xl px-8 lg:p-8 h-56">
+                <div class="text-do-white2 text-3xl font-bold font-epilogue leading-8">
                     Basic virtual machine costs
                 </div>
-                <div class="text-base font-normal text-do-white4 mt-2 leading-6 tracking-tighter">
+                <div class="text-base font-normal text-do-white4 my-3 lg:mt-4">
                     Easy, fast, and flexible compute built for a range of needs.
                 </div>
-                <div class="flex justify-between px-3 pt-10 ">
-                    <div class="rounded-md p-2 w-20 text-center text-white bg-do-blue-medium3 relative shine">
+                <div class="flex justify-between lg:px-3 pt-3 lg:pt-10 ">
+                    <div class="rounded-md p-0.5 lg:p-1 w-16 lg:w-20 text-center text-white bg-do-blue-medium3 relative shine">
                         1 CPU
                     </div>
-                    <div class="rounded-md p-2 w-20 text-center">
+                    <div class="rounded-md p-0.5 lg:p-1 w-16 lg:w-20 text-center text-white relative">
                         2 CPUs
                     </div>
-                    <div class="rounded-md p-2 w-20 text-center">
+                    <div class="rounded-md p-0.5 lg:p-1 w-16 lg:w-20 text-center text-white relative">
                         4 CPUs
                     </div>
-                    <div class="rounded-md p-2 w-20 text-center">
+                    <div class="rounded-md p-0.5 lg:p-1 w-16 lg:w-20 text-center text-white relative">
                         8 CPUs
                     </div>
                 </div>
             </div>
 
-            <div class="bg-do-white2 py-8 px-10 rounded-3xl">
-                <div class="flex justify-between text-do-gray-medium bg-do-white5 p-4 rounded-xl">
+            <div class="bg-do-white2 py-8 px-4 lg:px-10 rounded-3xl">
+                <div class="flex justify-between text-do-gray-medium bg-do-white5 py-4 px-6 lg:p-4 text-center rounded-xl">
                     1 GiB Memory / 25 GiB Storage / 1000 GiB Bandwidth
                 </div>
                 <div class="flex justify-between py-3 border-b decoration-dashed border-do-gray-medium2">
@@ -682,8 +682,8 @@
                         <img class="mr-4 w-10" src="https://www.digitalocean.com/_next/static/media/do-logo.d3eb8550.svg" alt="">
                         <p class="text-do-blue-dark2 leading-4">DigitalOcean</p>
                     </div>
-                    <div>
-                        <div class="text-do-blue-light text-3xl font-jetbrains font-bold text-right">
+                    <div class="text-right">
+                        <div class="text-do-blue-light text-3xl font-jetbrains font-bold">
                             $6,00
                         </div>
                         <p class="text-do-gray-medium font-jetbrains text-sm">Includes bandwidth</p>
@@ -694,8 +694,8 @@
                         <img class="mr-4 w-10" src="https://www.digitalocean.com/_next/static/media/gcp-logo.e05c1f98.svg" alt="">
                         <p class="text-do-blue-dark2 leading-4">GCP</p>
                     </div>
-                    <div>
-                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold text-right">
+                    <div class="text-right">
+                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold">
                             $6,88
                         </div>
                         <p class="text-do-gray-medium font-jetbrains text-sm">With bandwidth: $91,88</p>
@@ -706,8 +706,8 @@
                         <img class="mr-4 w-10" src="https://www.digitalocean.com/_next/static/media/aws-logo.72288ec5.svg" alt="">
                         <p class="text-do-blue-dark2 leading-4">AWS</p>
                     </div>
-                    <div>
-                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold text-right">
+                    <div class="text-right">
+                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold">
                             $8,47
                         </div>
                         <p class="text-do-gray-medium font-jetbrains text-sm">With bandwidth: $98,47</p>
@@ -718,8 +718,8 @@
                         <img class="mr-4 w-10" src="https://www.digitalocean.com/_next/static/media/azure-logo.9b198435.svg" alt="">
                         <p class="text-do-blue-dark2 leading-4">Azure</p>
                     </div>
-                    <div>
-                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold text-right">
+                    <div class="text-right">
+                        <div class="text-do-red-medium text-3xl font-jetbrains font-bold">
                             $7,59
                         </div>
                         <p class="text-do-gray-medium font-jetbrains text-sm">With bandwidth: $79,59</p>
