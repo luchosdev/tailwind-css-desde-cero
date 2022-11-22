@@ -12,17 +12,12 @@
 <body>
     <header class="sticky top-0 z-10">
         <!-- Navbar 1 -->
-        <div class="hidden lg:block bg-do-blue-dark2 text-gray-300 py-2 text-sm font-semibold">
+        <div class="bg-do-blue-dark2 text-gray-300 py-2 text-sm font-semibold">
             <div class="container mx-auto flex justify-between">
                 <a class="flex items-center cursor-pointer">
-                    <div>
-                        Our Sydney data center is here! Learn about our new, state-of-the-art data center in Australia
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                    </svg>
+                    Our Sydney data center is here! Learn about our new, state-of-the-art data center in Australia ->
                 </a>
-                <div class="flex gap-x-4 items-center">
+                <div class="hidden lg:flex gap-x-4 items-center">
                     <a href="" class="hover:text-white">We're Hiring</a>
                     <a href="" class="hover:text-white">Blog</a>
                     <a href="" class="hover:text-white">Docs</a>
@@ -33,15 +28,17 @@
         </div>
 
         <!-- Navbar 2 -->
-
             <!-- Mobile -->
-        <div class="container flex justify-between items-center mx-auto py-5  shadow-md relative text-do-blue-mediumdark2">
+        <div class="container lg:hidden flex justify-between items-center mx-auto py-5 shadow-md relative bg-do-white text-do-blue-mediumdark2">
             <div>
                 <img src="https://www.digitalocean.com/_next/static/media/logo.87a8f3b8.svg" alt="DigitalOceanPicture">
             </div>
-            <div></div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
         </div>
-
 
             <!-- Desktop -->
         <div class="hidden lg:block shadow-md relative bg-do-white">
@@ -79,7 +76,7 @@
         </div>
 
         <!-- Products Bar -->
-        <div class="bg-white px-3 pt-4 content-start hidden" id="products-bar">
+        <div class="bg-white px-3 pt-4 content-start hidden">
             <div class="flex">
                 <div class="pr-12 1/3">
                     <p class="ml-2 mb-2 text-sm font-bold text-do-blue-dark uppercase tracking-wider">
@@ -439,7 +436,7 @@
 
                                     <!-- Hero -->
     <section
-        class="pt-14 top-0.5 w-full h-screen bg-cover"
+        class="pt-14 top-0.5 w-full bg-center h-screen lg:bg-cover"
         style="background-image: url('./images/background-digitalOcean.png');"
         >
         <div class="container flex flex-col justify-center px-60 pt-2">
