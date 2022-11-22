@@ -11,6 +11,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @media (min-width: 640px) {
+    .nav-bar {
+        position: fixed;
+        top: 0;
+    }
+} */
+
 /* @layer components {
     .
 } */

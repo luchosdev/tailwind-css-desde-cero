@@ -256,3 +256,428 @@ MENÚ ESTÁTICO.
 
 CLASE 5.2.
 MENÚS DESPLEGABLES.
+
+
+<header class="sticky top-0 z-10">
+        <!-- Navbar 1 -->
+        <div class=" bg-do-blue-dark2 text-gray-300 py-2 text-sm font-semibold">
+            <div class="container mx-auto flex justify-between">
+                <a class="flex items-center text-center cursor-pointer">
+                    Our Sydney data center is here! Learn about our new, state-of-the-art data center in Australia ->
+                </a>
+                <div class="hidden lg:flex gap-x-4 items-center">
+                    <a href="" class="hover:text-white">We're Hiring</a>
+                    <a href="" class="hover:text-white">Blog</a>
+                    <a href="" class="hover:text-white">Docs</a>
+                    <a href="" class="hover:text-white">Get Support</a>
+                    <a href="" class="hover:text-white">Sales</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar 2 -->
+            <!-- Mobile -->
+        <div class="container lg:hidden flex justify-between items-center mx-auto py-5 shadow-md relative bg-do-white text-do-blue-mediumdark2">
+            <div>
+                <img src="https://www.digitalocean.com/_next/static/media/logo.87a8f3b8.svg" alt="DigitalOceanPicture">
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
+
+            <!-- Desktop -->
+        <div class="hidden lg:block shadow-md relative bg-do-white">
+            <div class="container flex justify-between items-center mx-auto py-5 text-do-blue-mediumdark2">
+                <div class="flex items-center gap-x-6 font-medium">
+                    <a href="">
+                        <img src="https://www.digitalocean.com/_next/static/media/logo.87a8f3b8.svg" alt="DigitalOceanPicture">
+                    </a>
+                    <div class="flex items-center cursor-pointer" onClick='show()'>
+                        <a href="" class="mr-2">Products</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div class="flex items-center cursor-pointer">
+                        <a href="" class="mr-2">Solutions</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <a href="">Marketplace</a>
+                    <div class="flex items-center cursor-pointer">
+                        <a href="" class="mr-2">Community</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <a href="">Pricing</a>
+                </div>
+                <div>
+                    <a href="" class="hover:bg-gray-200 px-5 py-3 rounded-lg font-medium focus:outline-dotted focus:outline-1 focus:bg-sky-100">Log In</a>
+                    <a href="" class="px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 text-white font-bold">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Bar -->
+        <div class="bg-white px-3 pt-4 content-start hidden">
+            <div class="flex">
+                <div class="pr-12 1/3">
+                    <p class="ml-2 mb-2 text-sm font-bold text-do-blue-dark uppercase tracking-wider">
+                        Featured Products
+                    </p>
+                    <ul class="flex flex-col">
+                        <li class="group hover:bg-sky-200 rounded-2xl p-1">
+                            <a class="flex flex-col p-1 rounded-2xl" href="/products/droplets">
+                                <span class="text-lg font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">Droplets</span>
+                                <span class="text-do-gray-medium">Scalable virtual machines</span>
+                            </a>
+                        </li>
+                        <li class="group hover:bg-sky-200 rounded-2xl p-1">
+                            <a class="flex flex-col p-1 rounded-2xl" href="/products/kubernetes">
+                                <span class="text-lg font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">Kubernetes</span>
+                                <span class="text-do-gray-medium">Managed Kubernetes clusters</span>
+                            </a>
+                        </li>
+                        <li class="group hover:bg-sky-200 rounded-2xl p-1">
+                            <a class="flex flex-col p-1 rounded-2xl" href="/products/cloudways">
+                                <span class="text-lg font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">Cloudways</span>
+                                <span class="text-do-gray-medium">Managed cloud hosting</span>
+                            </a>
+                        </li>
+                        <li class="group hover:bg-sky-200 rounded-2xl p-1">
+                            <a class="flex flex-col p-1 rounded-2xl" href="/products/app-platform">
+                                <span class="text-lg font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">App Platform</span>
+                                <span class="text-do-gray-medium">Get apps to market faster</span>
+                            </a>
+                        </li>
+                        <li class="group hover:bg-sky-200 rounded-2xl p-1">
+                            <a class="flex flex-col p-1 rounded-2xl" href="/products/managed-databases">
+                                <span class="text-lg font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">Databases</span>
+                                <span class="text-do-gray-medium">Worry-free setup &amp; maintenance</span>
+                            </a>
+                        </li>
+                        <li class="group hover:bg-sky-200 rounded-2xl p-1">
+                            <a class="flex flex-col p-1 rounded-2xl" href="/products/spaces">
+                                <span class="text-lg font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">Spaces</span>
+                                <span class="text-do-gray-medium">Simple object storage</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid 2/3 content-start grow grid-cols-3 mx-12 pb-10">
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider">Compute</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/droplets">Droplets</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/kubernetes">Kubernetes</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">App Platform</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/functions">Functions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider">Cloud Website Hosting</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Cloudways</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider">Storage</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/spaces">Spaces Object Storage</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/block-storage">Volumes Block Storage</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider">Networking</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/vpc">Virtual Private Cloud (VPC)</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloud-firewalls">Cloud Firewalls</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/load-balancer">Load Balancers</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="https://www.digitalocean.com/docs/networking/dns/">DNS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider">Managed Databases</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/managed-databases-mongodb">MongoDB</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/managed-databases-mysql">MySQL</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/managed-databases-postgresql">PostgreSQL</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/managed-databases-redis">Redis™</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider">Developer Tools</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="https://docs.digitalocean.com/reference/api/">API</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/tools-and-integrations#tools-and-integrations-cli">CLI</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/support">Support Plans</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/monitoring">Monitoring</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/uptime-monitoring">Uptime</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <a class="group flex justify-center items-center py-4 border-t border-t-gray-200 font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
+                See all products
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Solutions Bar -->
+        <div class="bg-white pt-8 content-start hidden" >
+            <div class="flex 1/3 px-10">
+                <div class="pr-10 flex flex-col gap-2">
+                    <p class="ml-1 mb-8 text-sm font-bold text-do-blue-dark uppercase tracking-wider">
+                        OUR BUSINESS SOLUTIONS
+                    </p>
+                    <ul class="flex flex-col gap-6">
+                        <li class="group hover:bg-sky-200 rounded-2xl">
+                            <a class="flex flex-col p-4" href="/products/droplets">
+                                <span class="text-xl font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">Website Hosting</span>
+                                <span class="text-do-gray-medium">
+                                    Simple and reliable cloud website hosting
+                                </span>
+                            </a>
+                        </li>
+                        <li class="group hover:bg-sky-200 rounded-2xl">
+                            <a class="flex flex-col p-4" href="/products/kubernetes">
+                                <span class="text-xl font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">VPS Hosting</span>
+                                <span class="text-do-gray-medium">
+                                    VPS hosting options suited to every need
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex justify-between 2/3 mx-10 pb-10 gap-20">
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider ">CLOUDWAYS</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/droplets">Managed WordPress
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/kubernetes">Managed Woocommerce
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">Managed Magento
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider">BY USE CASE</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Cloud VPN</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Web &amp; Mobile Apps</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Game Development</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Video Streaming</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Saas Platforms</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Blockchain</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="font-jetbrains font-semibold hover:text-do-blue-medium text-do-blue-light">
+                        <p class="group cursor-pointer">
+                            Questions? <br>
+                            Speak With An Expert
+                        </p>
+                        <a class="group flex items-center font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
+                            Today
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="group flex justify-center items-center py-4 border-t border-t-gray-200 font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
+                See all products
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Community Bar -->
+        <div class="bg-white pt-8 content-start hidden">
+            <div class="flex 1/3 px-10">
+                <div class="pr-10 flex flex-col gap-2">
+                    <p class="ml-1 mb-8 text-sm font-bold text-do-blue-dark uppercase tracking-wider">
+                        OUR COMMUNITY
+                    </p>
+                    <ul class="flex flex-col gap-6">
+                        <li class="group hover:bg-sky-200 rounded-2xl">
+                            <a class="flex flex-col p-4" href="/products/droplets">
+                                <span class="text-xl font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">
+                                    Community Home
+                                </span>
+                                <span class="text-do-gray-medium">
+                                    DevOps and development guides
+                                </span>
+                            </a>
+                        </li>
+                        <li class="group hover:bg-sky-200 rounded-2xl">
+                            <a class="flex flex-col p-4" href="/products/kubernetes">
+                                <span class="text-xl font-epilogue text-do-blue-mediumdark2 font-medium group-hover:text-do-blue-light">CSS-Tricks</span>
+                                <span class="text-do-gray-medium">
+                                    All things web design
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex justify-between 2/3 mx-10 pb-10 gap-20">
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider ">RESOURCES</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/droplets">Tutorials
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/kubernetes">Questions And Answers
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">Tools
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">Write for Donations
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">Customer Stories
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">DigitalOcean Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider">GET INVOLVED</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Hatch Startup Program</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Open Source Sponsorships</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Hacktoberfest</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Deploy</a>
+                            </li>
+                            <li>
+                                <a class="text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/cloudways">Do Impact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="mb-4 text-sm font-bold text-do-blue-dark uppercase tracking-wider ">DOCUMENTATION</p>
+                        <ul class="flex flex-col gap-2 mb-10">
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/droplets">Quick Start
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/kubernetes">Droplets
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">Storage
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">App Platform
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">API Reference
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="flex items-center text-do-gray-medium font-medium gap-2.5 hover:text-do-blue-dark2" href="/products/app-platform">Domains and DNS
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

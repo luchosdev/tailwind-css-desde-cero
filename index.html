@@ -12,7 +12,7 @@
 <body>
     <header class="sticky top-0 z-10">
         <!-- Navbar 1 -->
-        <div class="bg-do-blue-dark2 text-gray-300 py-2 text-sm font-semibold">
+        <div class=" bg-do-blue-dark2 text-gray-300 py-2 text-sm font-semibold">
             <div class="container mx-auto flex justify-between">
                 <a class="flex items-center text-center cursor-pointer">
                     Our Sydney data center is here! Learn about our new, state-of-the-art data center in Australia ->
@@ -436,8 +436,7 @@
 
                                     <!-- Hero -->
     <section
-        class="pt-20 lg:pt-6 top-0.5 w-full bg-center h-screen lg:bg-cover"
-        style="background-image: url('./images/background-digitalOcean.png');"
+        class="pt-20 lg:pt-6 top-0.5 bg-center bg-do-blue-light h-screen lg:bg-cover" style="background-image: url('./images/background-digitalOcean.png');"
         >
         <div class="lg:container px-5 lg:px-60 flex flex-col justify-center">
             <div class="text-do-white2 font-extrabold font-epilogue text-5xl lg:text-7.5xl text-center tracking-tight leading-10 lg:leading-96px">
@@ -1266,14 +1265,18 @@
         <div class="mr-[150px] max-w-[273px]">
             <img src="https://www.digitalocean.com/_next/static/media/seaFloorLeft.53f70537.svg" alt="">
         </div>
-        <div class="mr-[150px] max-w-[560px]">
+        <div class="hidden lg:block mr-[150px] max-w-[560px]">
             <img src="https://www.digitalocean.com/_next/static/media/seaFloorMiddle.b8dc47b6.svg" alt="">
         </div>
-        <div class="max-w-[294px]">
+        <div class="hidden lg:block max-w-[294px]">
             <img src="https://www.digitalocean.com/_next/static/media/seaFloorRight.9cccc865.svg" alt="">
         </div>
     </section>
 
-    <div class="py-40"></div>
+    <div class="relative z-10">
+        <a class="fixed right-0 bottom-0" href="">
+            <img class="sticky" src="https://narwal-general-assets.fra1.digitaloceanspaces.com/cookie-preferences.png">
+        </a>
+    </div>
 </body>
 </html>
