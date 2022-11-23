@@ -13,7 +13,7 @@
     <header class="sticky top-0 z-10">
         <!-- Navbar 1 -->
         <div class=" bg-do-blue-dark2 text-gray-300 py-2 text-sm font-semibold">
-            <div class="container mx-auto flex justify-between">
+            <div class="container mx-auto flex justify-center lg:justify-between">
                 <a class="flex items-center text-center cursor-pointer">
                     Our Sydney data center is here! Learn about our new, state-of-the-art data center in Australia ->
                 </a>
@@ -33,7 +33,11 @@
             <div>
                 <img src="https://www.digitalocean.com/_next/static/media/logo.87a8f3b8.svg" alt="DigitalOceanPicture">
             </div>
-            <div>
+            <div class="hidden md:flex">
+                <div class="mr-5 pr-5 border-r border-r-gray-600">
+                    <a href="" class="hover:bg-gray-200 px-5 py-3 rounded-lg font-medium focus:outline-dotted focus:outline-1 focus:bg-sky-100">Log In</a>
+                    <a href="" class="px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 text-white font-bold">Sign Up</a>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
@@ -436,10 +440,10 @@
 
                                     <!-- Hero -->
     <section
-        class="pt-20 lg:pt-6 top-0.5 bg-center bg-do-blue-light h-screen lg:bg-cover" style="background-image: url('./images/background-digitalOcean.png');"
+        class="pt-20 lg:pt-6 md:pb-20 top-0.5 bg-center bg-do-blue-light h-screen md:h-auto lg:bg-cover" style="background-image: url('./images/background-digitalOcean.png');"
         >
-        <div class="lg:container px-5 lg:px-60 flex flex-col justify-center">
-            <div class="text-do-white2 font-extrabold font-epilogue text-5xl lg:text-7.5xl text-center tracking-tight leading-10 lg:leading-96px">
+        <div class="lg:container px-5 md:px-16 lg:px-60 flex flex-col justify-center">
+            <div class="text-do-white2 font-extrabold font-epilogue text-5xl lg:text-7.5xl text-center tracking-tight leading-10 md:leading-none lg:leading-96px">
                 The simple cloud that drives business growth
             </div>
             <div class="flex text-do-white2 pt-4 pb-10 text-xl text-center ">
@@ -457,42 +461,6 @@
                 <button class=" px-5 py-3 rounded-xl w-56 bg-do-blue-medium2 hover:bg-do-blue-mediumdark text-white font-bold shadow-btn-1">Sign up with email</button>
             </div>
         </div>
-                        <!-- Esta es la versión anterior, que se ve en el curso... -->
-        <!-- <div class="flex items-center container mx-auto">
-            <div class="w-1/2">
-                <h1 class="text-6xl font-bold tracking-tighter">
-                    The cloud is complex.
-                    We make it simple.
-                </h1>
-                <p class="mt-5 text-2xl font-medium text-gray-500 tracking-tighter">
-                    The cloud computing services you need, with the predictable pricing, developer-friendly features, and scalability you'll love.
-                </p>
-            </div>
-            <div class="w-1/2">
-                <div class="mb-4 font-medium w-4/5">
-                    Welcome to DigitalOcean. Sign up to get started!
-                </div>
-                <form action="">
-                    <div class="flex flex-col gap-y-5 w-4/5">
-                        <input class="px-5 py-4 rounded-lg border border-gray-400 focus:border-gray-600 shadow-input hover:shadow-input-focus focus:shadow-input-focus outline-none" type="text" placeholder="First name">
-                        <input class="px-5 py-4 rounded-lg border border-gray-400 focus:border-gray-600 shadow-input hover:shadow-input-focus focus:shadow-input-focus outline-none" type="email" placeholder="Email">
-                        <input class="px-5 py-4 rounded-lg border border-gray-400 focus:border-gray-600 shadow-input hover:shadow-input-focus focus:shadow-input-focus outline-none" type="password" placeholder="Password">
-                        <div class="flex justify-between gap-x-4">
-                            <button class="w-3/4 px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 text-white font-bold">Deploy in seconds</button>
-                            <button class="px-3 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg">
-                                <img src="https://doimages.nyc3.digitaloceanspaces.com/google-logo.svg" alt="Google">
-                            </button>
-                            <button class="px-3 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg">
-                                <img src="https://doimages.nyc3.digitaloceanspaces.com/github-logo.svg" alt="GitHub">
-                            </button>
-                        </div>
-                        <div class="text-gray-500">
-                            By signing up you agree to the <a class="underline font-light">Terms of Service</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div> -->
     </section>
 
                                     <!-- Stadistic Data -->
@@ -522,7 +490,7 @@
         <div class="flex justify-center font-bold tracking-tighter text-do-blue-dark3 text-4.5xl">
             Do more with less complexity
         </div>
-        <div class="flex pt-6 pb-12 lg:px-72 text-base text-do-gray-medium">
+        <div class="flex pt-6 pb-12 md:px-20 lg:px-72 text-base text-do-gray-medium">
             Our simple UI, CLI, API, and docs enable you to spend time on your business while we focus on the infrastructure.
         </div>
         <a class="group flex justify-center items-center font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
@@ -649,15 +617,15 @@
         </div>
 
         <div class="rounded-3xl border shadow-lg shadow-gray-200">
-            <div class="flex flex-col justify-center bg-do-blue-light2 rounded-t-3xl px-8 lg:p-8 h-56">
+            <div class="flex flex-col justify-center text-center bg-do-blue-light2 rounded-t-3xl px-8 md:px-24 lg:p-8 h-56">
                 <div class="text-do-white2 text-3xl font-bold font-epilogue leading-8">
                     Basic virtual machine costs
                 </div>
                 <div class="text-base font-normal text-do-white4 my-3 lg:mt-4">
                     Easy, fast, and flexible compute built for a range of needs.
                 </div>
-                <div class="flex justify-between lg:px-3 pt-3 lg:pt-10 ">
-                    <div class="rounded-md p-0.5 lg:p-1 w-16 lg:w-20 text-center text-white bg-do-blue-medium3 relative shine">
+                <div class="flex justify-between md:justify-center lg:justify-between lg:px-3 pt-3 lg:pt-7 ">
+                    <div class="rounded-md p-0.5 lg:p-1 w-16 md:w-20 text-center text-white bg-do-blue-medium3 relative shine">
                         1 CPU
                     </div>
                     <div class="rounded-md p-0.5 lg:p-1 w-16 lg:w-20 text-center text-white relative">
@@ -673,7 +641,7 @@
             </div>
 
             <div class="bg-do-white2 py-8 px-4 lg:px-10 rounded-3xl">
-                <div class="flex justify-between text-do-gray-medium bg-do-white5 py-4 px-6 lg:p-4 text-center rounded-xl">
+                <div class="flex justify-center text-do-gray-medium bg-do-white5 py-4 px-6 lg:p-4 text-center rounded-xl">
                     1 GiB Memory / 25 GiB Storage / 1000 GiB Bandwidth
                 </div>
                 <div class="flex justify-between py-3 border-b decoration-dashed border-do-gray-medium2">
@@ -761,7 +729,7 @@
         <div class="flex justify-center font-bold pb-6 tracking-tighter text-do-blue-dark3 text-4.5xl">
             Grow with a global community
         </div>
-        <div class="flex pt-4 pb-12 lg:px-72 text-base text-center text-do-gray-medium">
+        <div class="flex pt-4 pb-12 md:px-24 lg:px-72 text-base text-center text-do-gray-medium">
             Our community is made up of people all over the world, who are driven to develop software and grow businesses in the cloud. Learn from other cloud users through open tutorials, resources, and events.
         </div>
         <a class="group flex justify-center items-center font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
@@ -781,7 +749,7 @@
                     <img class="rounded-t-3xl" src="https://www.digitalocean.com/_next/static/media/how-to-install-mysql-tutorial-image.b1d74259.jpg" alt="">
                 </div>
 
-                <div class="my-6 mx-8 flex flex-wrap">
+                <div class="my-6 mx-8">
                     <h4 class="text-do-gray-medium3 text-sm font-extrabold font-jetbrains">
                         tutorial
                     </h4>
@@ -799,7 +767,7 @@
                     <img class="rounded-t-3xl" src="https://www.digitalocean.com/_next/static/media/contributing-to-open-source-blog-image.18872550.jpg" alt="">
                 </div>
 
-                <div class="my-6 mx-8 flex flex-wrap">
+                <div class="my-6 mx-8">
                     <h4 class="text-do-gray-medium3 text-sm font-extrabold font-jetbrains">
                         blog
                     </h4>
@@ -820,7 +788,7 @@
                     <img class="rounded-t-3xl" src="https://www.digitalocean.com/_next/static/media/how-to-deploy-a-react-app-tutorial-image.91bcecea.jpg" alt="">
                 </div>
 
-                <div class="my-6 mx-8 flex flex-wrap">
+                <div class="my-6 mx-8">
                     <h4 class="text-do-gray-medium3 text-sm font-extrabold font-jetbrains">
                         tutorial
                     </h4>
@@ -838,7 +806,7 @@
                     <img class="rounded-t-3xl" src="https://www.digitalocean.com/_next/static/media/how-to-code-in-python-tutorial-image.272d48e4.jpg" alt="">
                 </div>
 
-                <div class="my-6 mx-8 flex flex-wrap">
+                <div class="my-6 mx-8">
                     <h4 class="text-do-gray-medium3 text-sm font-extrabold font-jetbrains">
                         tutorial
                     </h4>
@@ -859,7 +827,7 @@
                     <img class="rounded-t-3xl" src="https://www.digitalocean.com/_next/static/media/how-to-install-nodejs-tutorial-image.dcbc2efd.jpg" alt="">
                 </div>
 
-                <div class="my-6 mx-8 flex flex-wrap">
+                <div class="my-6 mx-8">
                     <h4 class="text-do-gray-medium3 text-sm font-extrabold font-jetbrains">
                         tutorial
                     </h4>
@@ -877,7 +845,7 @@
                     <img class="rounded-t-3xl" src="https://www.digitalocean.com/_next/static/media/introducing-digitalocean-managed-mongodb-blog-image.312fe1ae.jpg" alt="">
                 </div>
 
-                <div class="my-6 mx-8 flex flex-wrap">
+                <div class="my-6 mx-8">
                     <h4 class="text-do-gray-medium3 text-sm font-extrabold font-jetbrains">
                         blog
                     </h4>
@@ -898,7 +866,7 @@
                     <img class="rounded-t-3xl" src="https://www.digitalocean.com/_next/static/media/how-to-scale-your-saas-product-blog-image.260c8878.jpg" alt="">
                 </div>
 
-                <div class="my-6 mx-8 flex flex-wrap">
+                <div class="my-6 mx-8">
                     <h4 class="text-do-gray-medium3 text-sm font-extrabold font-jetbrains">
                         blog
                     </h4>
@@ -916,7 +884,7 @@
                     <img class="rounded-t-3xl" src="https://www.digitalocean.com/_next/static/media/multi-cloud-vs-hybrid-cloud-blog-image.c9b604bc.jpg" alt="">
                 </div>
 
-                <div class="my-6 mx-8 flex flex-wrap">
+                <div class="my-6 mx-8">
                     <h4 class="text-do-gray-medium3 text-sm font-extrabold font-jetbrains">
                         tutorial
                     </h4>
@@ -1202,13 +1170,13 @@
             <!-- Social Media and All Rights -->
             <div class="flex flex-col lg:flex-row justify-between pt-5">
                 <!-- All rights -->
-                <div class="flex flex-col lg:flex-row items-center justify-center mb-10">
-                    <img class="w-10 h-10 mr-5 mb-5 lg:mb-0" src="https://www.digitalocean.com/_next/static/media/do-logo-digitized.e5014337.svg" alt="logo">
+                <div class="flex flex-col md:flex-row items-center justify-center mb-10">
+                    <img class="w-10 h-10 mr-5 mb-5 md:mb-0" src="https://www.digitalocean.com/_next/static/media/do-logo-digitized.e5014337.svg" alt="logo">
                     <p class="text-do-white6 font-medium">© 2022 DigitalOcean, LLC. All rights reserved.</p>
                 </div>
                 <!-- Social media -->
-                <div class="flex">
-                    <ul class="flex flex-wrap justify-center px-5 lg:px-0">
+                <div class="flex justify-center">
+                    <ul class="flex px-5 lg:px-0">
                         <li class="my-1 mx-2">
                             <a class="text-do-gray-medium font-medium gap-2.5" href="https://www.twitch.tv/digitaloceantv" id="Twitchtv">
                                 <img data-src="/_next/static/media/socialTwitch.a40b5940.svg" src="https://www.digitalocean.com//_next/static/media/socialTwitch.a40b5940.svg" alt="Twitchtv">
@@ -1265,7 +1233,7 @@
         <div class="mr-[150px] max-w-[273px]">
             <img src="https://www.digitalocean.com/_next/static/media/seaFloorLeft.53f70537.svg" alt="">
         </div>
-        <div class="hidden lg:block mr-[150px] max-w-[560px]">
+        <div class="hidden md:block md:text-right lg:mr-[150px] max-w-[560px]">
             <img src="https://www.digitalocean.com/_next/static/media/seaFloorMiddle.b8dc47b6.svg" alt="">
         </div>
         <div class="hidden lg:block max-w-[294px]">
