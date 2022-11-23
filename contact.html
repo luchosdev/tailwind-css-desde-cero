@@ -6,41 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="./css/tailwind.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" type="module"></script>
 </head>
 <body>
     <div id="app">
-        <panel>
-            <template v-slot:title>
-                Contacto
-            </template>
-            <template v-slot:body>
-                <p class="leading-7 pb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed assumenda quidem dicta minima cum commodi sequi fugit totam, id blanditiis maxime, aspernatur suscipit sapiente, veritatis odio voluptate expedita quasi iste.
-                </p>
-                <a class="btn-primary" href="./index.html">
-                    Inicio
-                </a>
-            </template>
-        </panel>
-    </div>
-
-    <script src="./js/app.js">
-        /* Vue.component('panel', {
-            template: `
-                <div class="border border-blue-900">
-                    <div class="bg-blue-900 text-white py-5 px-4 text-2xl">
-                        <slot name="title"></slot>
-                    </div>
-                    <div class="py-5 px-4">
-                        <slot name="body"></slot>
-                    </div>
+        <div class="w-96 mx-auto mt-40 px-5 py-4 border border-gray-500 bg-gray-100">
+            <h1 class="text-xl font-medium">Contacto</h1>
+            <form action="">
+                <div>
+                    <label class="block" for="">Nombre</label>
+                    <input type="text" class="">
                 </div>
-            `
-        })
-        new Vue({
-            el: '#app'
-        }) */
-    </script>
+                <div>
+                    <label class="block" for="">Email</label>
+                    <input type="text" class="">
+                </div>
+                <div>
+                    <label class="block" for="">Departamento</label>
+                    <select name="" id="" class="">
+                        <option value="">Ventas</option>
+                        <option value="">Soporte</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block" for="">Descripción</label>
+                    <textarea name="" id="" cols="30" rows="10" class=""></textarea>
+                </div>
+                <div>
+                    <label class="block" for=""><input type="checkbox" class=""> Acepto términos y condiciones</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
