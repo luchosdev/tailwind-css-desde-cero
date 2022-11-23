@@ -440,7 +440,7 @@
 
                                     <!-- Hero -->
     <section
-        class="pt-20 lg:pt-6 md:pb-20 top-0.5 bg-center bg-do-blue-light h-screen md:h-auto lg:bg-cover" style="background-image: url('./images/background-digitalOcean.png');"
+        class="pt-20 md:pb-20 lg:pt-6 bg-center lg:bg-cover bg-do-blue-light h-screen md:h-auto flex justify-center" style="background-image: url('./images/background-digitalOcean.png');"
         >
         <div class="lg:container px-5 md:px-16 lg:px-60 flex flex-col justify-center">
             <div class="text-do-white2 font-extrabold font-epilogue text-5xl lg:text-7.5xl text-center tracking-tight leading-10 md:leading-none lg:leading-96px">
@@ -466,19 +466,19 @@
                                     <!-- Stadistic Data -->
     <section class="bg-do-blue-light">
         <div class="container flex flex-col lg:flex-row text-center lg:text-left mx-auto pt-24 px-16 justify-center gap-10 rounded-t-5xl bg-do-white">
-            <div class="container ">
+            <div class="">
                 <div class="text-do-blue-light font-bold text-5xl font-epilogue">15</div>
                 <div class="text-do-gray-medium font-medium text-xl w-7/8">Globally distributed data centers</div>
             </div>
-            <div class="container ">
+            <div class="">
                 <div class="text-do-blue-light font-bold text-5xl font-epilogue">185</div>
                 <div class="text-do-gray-medium font-medium text-xl w-7/8">Countries our customers build in</div>
             </div>
-            <div class="container ">
+            <div class="">
                 <div class="text-do-blue-light font-bold text-5xl font-epilogue">> 600k</div>
                 <div class="text-do-gray-medium font-medium text-xl w-7/8">Customers building with DigitalOcean</div>
             </div>
-            <div class="container ">
+            <div class="">
                 <div class="text-do-blue-light font-bold text-5xl font-epilogue">99.99%</div>
                 <div class="text-do-gray-medium font-medium text-xl w-7/8">Uptime SLA for Droplets and Storage</div>
             </div>
@@ -486,19 +486,21 @@
     </section>
 
                                     <!-- Explore our products -->
-    <section class="container flex flex-col justify-center py-24 bg-do-white text-center leading-none">
-        <div class="flex justify-center font-bold tracking-tighter text-do-blue-dark3 text-4.5xl">
-            Do more with less complexity
+    <section class="container mx-auto">
+        <div class="flex flex-col justify-center py-24 bg-do-white text-center leading-none">
+            <div class="flex justify-center font-bold tracking-tighter text-do-blue-dark3 text-4.5xl">
+                Do more with less complexity
+            </div>
+            <div class="flex justify-center pt-6 pb-12 md:px-20 lg:px-72 text-base text-do-gray-medium">
+                Our simple UI, CLI, API, and docs enable you to spend time on your business while we focus on the infrastructure.
+            </div>
+            <a class="group flex justify-center items-center font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
+                Explore our products
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+            </a>
         </div>
-        <div class="flex pt-6 pb-12 md:px-20 lg:px-72 text-base text-do-gray-medium">
-            Our simple UI, CLI, API, and docs enable you to spend time on your business while we focus on the infrastructure.
-        </div>
-        <a class="group flex justify-center items-center font-jetbrains font-semibold cursor-pointer hover:text-do-blue-medium text-do-blue-light" href="">
-            Explore our products
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:ml-2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-            </svg>
-        </a>
     </section>
 
                                     <!-- Carrusel -->
@@ -509,7 +511,7 @@
         </div>
         <div class="flex flex-col bg-do-white3 pt-5">
                 <!-- Franja 1 -->
-                <div class="flex gap-5">
+                <div class="flex gap-5 mx-auto">
     
                         <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
                             <div class="m-auto">
@@ -553,10 +555,10 @@
                         </div> -->
     
                 </div>
-    
+
                 <!-- Franja 2 -->
-                <div class="flex gap-5 pt-10 pb-20">
-    
+                <div class="flex gap-5 pt-10 pb-20 mx-auto">
+
                         <div class="shrink-0 flex w-52 h-28 bg-do-white2 rounded-lg shadow-lg">
                             <div class="m-auto">
                                 <img src="./images/9.svg"></img>
@@ -594,13 +596,13 @@
                         </div> -->
     
                 </div>
-    
+
         </div>
         <div class="bg-do-white h-16" style="background-image: url('https://www.digitalocean.com/_next/static/media/bottomWaveSliceBlue5.47e176fb.svg');" alt=""></div>
     </section>
 
                                     <!-- Cost of products -->
-    <section class="container flex flex-col lg:flex-row justify-between bg-do-white pt-12 pb-16">
+    <section class="container flex flex-col lg:flex-row justify-between bg-do-white pt-12 pb-16 mx-auto">
         <div class="flex flex-col justify-center text-center lg:text-left leading-none pb-14">
             <div class=" text-do-blue-dark3 text-4.5xl font-bold font-epilogues">
                 See what you can save
@@ -725,7 +727,7 @@
     </section>
 
                                     <!-- Join our community -->
-    <section class="container flex flex-col justify-between lg:justify-center py-14 bg-do-white text-center leading-none">
+    <section class="container flex flex-col justify-between lg:justify-center mx-auto py-14 bg-do-white text-center leading-none">
         <div class="flex justify-center font-bold pb-6 tracking-tighter text-do-blue-dark3 text-4.5xl">
             Grow with a global community
         </div>
@@ -741,7 +743,7 @@
     </section>
 
                                     <!-- Blocks -->
-    <section class="container lg:grid grid-flow-col gap-10 lg:gap-8 my-20 ">
+    <section class="container lg:grid grid-flow-col gap-10 lg:gap-8 my-20 mx-auto">
         <!-- Column 1 -->
         <div>
             <div class="bg-white shadow-lg rounded-lg cursor-pointer">
@@ -918,8 +920,8 @@
                                     <!-- Image Wave -->
     <section class="bg-do-green-light h-16" style="background-image: url('https://www.digitalocean.com/_next/static/media/footerWave.40ccbc0c.svg');"></section>
 
-    <footer class="px-2 lg:container bg-do-blue-light ">
-        <div class="lg:container flex flex-col justify-between">
+    <footer class="mx-0 bg-do-blue-light">
+        <div class="lg:container flex flex-col justify-between mx-auto">
             <!-- Columns -->
             <div class="flex flex-col lg:flex-row lg:justify-between mb-20 lg:my-0">
                 <!-- Column 1 -->
